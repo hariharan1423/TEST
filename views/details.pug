@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title
+        link(rel="stylesheet", href="styles.css")
+    body 
+    h1 REGISTERED_DETAILS
+    table
+      thead 
+       tr 
+         th FIRST_NAME 
+         th LAST_NAME
+         th EMAIL
+         th PHONE_NUMBER
+         th GENDER 
+         th ADDRESS
+         th CITY
+         th COUNTRY
+         th STATE
+         th ZIP-CODE
+      each item in  items 
+        tr 
+         td=item.firstname
+         td=item.lastname 
+         td=item.email 
+         td=item.phonenumber
+         td=item.gender 
+         td=item.address 
+         td=item.city 
+         td=item.country 
+         td=item.state 
+         td=item.zipcode 

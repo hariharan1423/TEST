@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.container{
+    width: 500px;
+    padding:20px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius:10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+}
+form button[type=submit]{
+    width: 100px;
+    /* align-self:center; */
+    float: right;
+    padding: 8px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 30px;
+}
+
+
+.subContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.subContainer a button{
+    width: 100px;
+    padding: 8px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 30px;
+}
+input.Valid{
+    border: 4px solid greenyellow;
+}
+input.Invalid{
+    border: 4px solid red;
+}
