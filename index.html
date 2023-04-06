@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <u><h1 align="center">REGISTRATION FORM.</h1></u><br>
+        <form method="post" action="/submit">
+            <label>FIRST NAME : </label>
+            <input type="text" name="fname" placeholder="Enter your first name." required><br>
+            <label for="lName">LAST NAME : </label>
+            <input type="text" name="lname" placeholder="Enter your last name." required><br>
+            <label for="email">EMAIL : </label>
+            <input type="email" name="email" placeholder="Enter your email." required><br>
+            <label for="phn">PHONE NUMBER : </label>
+            <input type="number" name="phn" placeholder="Enter your phone number." required><br>
+            <label for="gender">GENDER : </label>
+            <select name="gender">
+                <option disabled value=" " >SELECT</option>
+                <option>MALE</option>
+                <option>FEMALE</option>
+            </select><br>
+            <label for="address">ADDRESS : </label>
+            <textarea name="address" placeholder="Enter your address."></textarea><br>
+            <label for="city">CITY : </label>
+            <input type="text" name="city" placeholder="Enter your city name." required><br>
+            <label for="county">COUNTRY : </label>
+            <input type="text" name="country" placeholder="Enter your country name." required><br>
+            <label for="state">STATE</label>
+            <input type="text" name="state" placeholder="Enter your state name." required><br>
+            <label for="zip">ZIP-CODE : </label>
+            <input type="number" name="zip" placeholder="Enter your zip-code." required><br>
+            
+            <button type="submit">SUBMIT</button>
+            
+        </form>
+        <div class="subContainer">
+        <a href="/details"><button>SHOW</button></a>
+       </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
